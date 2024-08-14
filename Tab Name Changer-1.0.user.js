@@ -31,4 +31,10 @@
             changeTabTitle(newTitle);
         }
     });
+
+    // Скрываем элемент с классом .bx-layout-inner-left
+    const elementToHide = document.querySelector('td.bx-layout-inner-left');
+    if (elementToHide) {
+        elementToHide.style.display = 'none'; // Скрываем элемент
+    }
 })();
